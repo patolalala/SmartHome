@@ -1,7 +1,9 @@
 /* Estilos para el fondo de pantalla */
 .fondo{
-    background: url('../img/fondo/fondo.jpg') rgba(204, 204, 204, 0.753);
-    background-size: cover; 
+    background: url("../img/fondo/fondo.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
 }
 /* ----------------------------------------- */
 /* Estilos para el div con opacidad */
@@ -43,8 +45,6 @@ body{
     margin-top: 100px;
 }
 .boton button{
-    width: 400px;
-    height: 75px;
     font-size: 24px;
     font-weight: bold;
 }
