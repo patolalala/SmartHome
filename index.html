@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/estilos.css">
 
     <title>Inicio</title>
-    
+
 </head>
 
 <body class="fondo">
@@ -20,14 +20,14 @@
 
     <!-- Comienzo Estrucutura Pagina -->
     <div class="container mt-5">
-        
+
         <div class="row justify-content-center">
             <!-- Columna del logo -->
             <div class="col-12 logo mt-2">
                 <!-- ------- -->
                 <img class="img-fluid" src="img/logo/logo.png" alt="">
                 <!-- Eslogan -->
-                <p class="h2 eslogan">El control de tu Hogar al alcance de tu mano</p>
+                <p class="eslogan">El control de tu Hogar al alcance de tu mano</p>
                 <!-- ------------>
             </div>
             <!-- columna del boton -->
@@ -37,7 +37,32 @@
             </div>
             <!-- Columna del link para Registrarse -->
             <div class="col-12 mt-5">
-                <a class="link-Registrate" href="#">¿Eres Nuevo?¡Registrate!</a>
+                <a class="link-Registrate" href="#" data-toggle="modal" data-target="#modal-registrarse">¿Eres Nuevo?¡Registrate!</a>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="modal-registrarse" tabindex="-1" role="dialog" aria-labelledby="modal-registrarse" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Activacion</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="col-auto input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="inputGroup-sizing-default"><i class="fas fa-user"></i></span>
+                                </div>
+                                <input type="text" class="form-control" placeholder="Ingrese su Correo">
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary">Enviar</button>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
